@@ -1,0 +1,26 @@
+@import "../../styles.scss";
+
+.btn-text {
+  &:link,
+  &:visited {
+    font-size: 1.8rem;
+    color: $color-primary;
+    display: inline;
+    text-decoration: none;
+    border-bottom: 1px solid $color-primary;
+    padding: 7px;
+  }
+
+  &:hover {
+    background-color: $color-primary;
+    color: $color-white;
+    box-shadow: 0 1rem 2rem rgba($color-dark, .15);
+    transform: translateY(-2px);
+
+  }
+
+  &:active {
+    box-shadow: 0 .5rem 1rem rgba($color-dark, .15);
+    transform: translateY(0);
+  }
+}
