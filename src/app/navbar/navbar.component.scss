@@ -1,0 +1,20 @@
+@import "../../styles.scss";
+
+
+
+.navbar__personal{
+  font-size: 1.6rem;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: .2rem;
+  font-weight: 400;
+  color: $color-dark;
+
+  &--links{
+    font-size: 1.4rem !important;
+
+  }
+
+  &--logo{
+    height: 7vh;
+  }
+}

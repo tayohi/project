@@ -1,24 +1,28 @@
 @import "../../styles.scss";
+@import "../scss_utilities/card.scss";
 
 .header {
-  height: 95vh;
-  background-image: linear-gradient(to right bottom, rgba($color-primary-light, 0.8), rgba($color-primary-dark, 0.8) ), url(../../assets//hero.jpg);
+  height: 50vh;
+  background-image: linear-gradient(to right bottom, rgba($color-white, 0.7), rgba($color-white, 0.7) ), url(../../assets//hero.jpg);
   background-size: cover;
   background-position: top;
-  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0% 100%);
+  background-attachment: fixed;
+  // clip-path: polygon(0 0, 100% 0, 100% 85vh, 0% 100%);
   position: relative;
 
   &__logo-box {
     position: absolute;
-    top: 4rem;
-    left: 4rem;
+    top: 0rem;
+    left: 50%;
+    transform: translate(-50%);
   }
 
   &__logo {
-    height: 3.5rem;
+    height: 100px;
   }
 
   &__text-box {
+    margin-top: 40px;
     position: absolute;
     top: 40%;
     left: 50%;
@@ -26,30 +30,36 @@
     text-align: center;
   }
 }
+.section-tours{
+  background-color: $color-grey-light-1;
+  height: 50vh;
+ }
+
 
 
 .heading-primary {
-  color: $color-white;
-  text-transform: uppercase;
+  color: $color-dark;
   backface-visibility: hidden;
-  margin-bottom: 6rem;
+  margin-bottom: 3rem;
 
   &--main {
+    font-family: 'Roboto', sans-serif;
     display: block;
     font-size: 6rem;
-    font-weight: 400;
-    letter-spacing: 3.5rem;
-
+    font-weight: 700;
+    letter-spacing: 1rem;
+    margin-bottom: 1rem;
     animation-name: moveInLeft;
     animation-duration: 1s;
     animation-timing-function: ease-out;
   }
 
   &--sub {
+    font-family: 'Roboto', sans-serif;
     display: block;
-    font-size: 2rem;
-    font-weight: 700;
-    letter-spacing: 1.75rem;
+    font-size: 3rem;
+    font-weight: 300;
+    letter-spacing: 1.2rem;
 
     animation-name: moveInRight;
     animation-duration: 1s;
@@ -57,6 +67,24 @@
   }
 }
 
+.heading-secondary {
+  margin: 3rem 0 ;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block;
+  background-image: linear-gradient(to right, $color-grey-light-1, $color-white );
+  background-clip: text;
+  -webkit-background-clip: text;
+  letter-spacing: .2rem;
+  transition: all .2s;
+
+
+  &:hover {
+    transform: skewY(2deg) skewX(15deg) scale(1.1);
+    text-shadow: .5rem 1rem 2rem rgba($color-dark, .2);
+  }
+}
 
 
 @keyframes moveInLeft {
@@ -113,14 +141,18 @@
 
   &:link,
 &:visited {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.6rem;
+  letter-spacing: 0.5rem;
   text-transform: uppercase;
+  font-weight: 400;
+  text-align: center;
   text-decoration: none;
-  padding: 1.5rem 4rem;
+  padding: 1rem 3rem;
   display: inline-block;
-  border-radius: 10rem;
+  border-radius: 1.5rem;
   transition: all .2s;
   position: relative;
-  font-size: 1.6rem;
 
 }
 
@@ -141,11 +173,12 @@
 
 }
 &--white {
-  background-color: $color-white;
-  color: $color-grey-dark;
+  background-color: $color-primary;
+  border: 1px solid $color-primary;
+  color: $color-dark;
 
   &::after {
-    background-color: $color-white;
+    border: 2px solid $color-primary;
   }
 }
 
@@ -155,7 +188,7 @@
   display: inline-block;
   height: 100%;
   width: 100%;
-  border-radius: 100px;
+  border-radius: 1.5rem;
   position: absolute;
   top: 0;
   left: 0;

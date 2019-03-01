@@ -1,0 +1,61 @@
+<!--Navbar-->
+<mdb-navbar SideClass="navbar navbar-expand-lg navbar-light fixed-top  scrolling-navbar">
+
+  <!-- Navbar brand -->
+  <mdb-navbar-brand><a class="navbar-brand"href="#"></a><img src="assets/reoflex.png" class="navbar__personal--logo" alt="Logo Reoflex"></mdb-navbar-brand>
+
+  <!-- Collapsible content -->
+  <links>
+
+    <!-- Links -->
+    <ul class="navbar-nav mr-auto smooth-scroll ml-5 navbar__personal">
+      <li class="nav-item active">
+        <a class="nav-link waves-light mr-3" mdbWavesEffect>Start<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link waves-light mr-3" mdbWavesEffect>O firmie</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link waves-light mr-3" mdbWavesEffect>Oferta</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link waves-light mr-3" mdbWavesEffect>Kontakt</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link waves-light mr-3" mdbWavesEffect>Promocje</a>
+      </li>
+
+
+      <!-- Dropdown -->
+      <li class="nav-item dropdown" dropdown>
+        <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle "  mdbWavesEffect>
+          Produkty<span class="caret"></span></a>
+        <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary " role="menu">
+          <a class="dropdown-item  navbar__personal--links" mdbWavesEffect href="#">Action</a>
+          <a class="dropdown-item  navbar__personal--links" mdbWavesEffect href="#">Another action</a>
+          <a class="dropdown-item  navbar__personal--links" mdbWavesEffect href="#">Something else here</a>
+          <div class="divider dropdown-divider"></div>
+          <a class="dropdown-item  navbar__personal--links" mdbWavesEffect href="#">Separated link</a>
+        </div>
+      </li>
+
+    </ul>
+    <!-- Links -->
+
+    <!-- Social Icon  -->
+    <ul class="navbar-nav nav-flex-icons navbar__personal">
+      <li class="nav-item">
+        <a class="nav-link"><i class="fab fa-facebook-f"></i></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link"><i class="fab fa-twitter"></i></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link"><i class="fab fa-instagram"></i></a>
+      </li>
+    </ul>
+  </links>
+  <!-- Collapsible content -->
+
+</mdb-navbar>
+<!--/.Navbar-->
