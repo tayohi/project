@@ -2,7 +2,7 @@
 @import "../scss_utilities/card.scss";
 
 .header {
-  height: 50vh;
+  height: 60vh;
   background-image: linear-gradient(to right bottom, rgba($color-white, 0.7), rgba($color-white, 0.7) ), url(../../assets//hero.jpg);
   background-size: cover;
   background-position: top;
@@ -32,7 +32,7 @@
 }
 .section-tours{
   background-color: $color-grey-light-1;
-  height: 50vh;
+  height: 40vh;
  }
 
 
